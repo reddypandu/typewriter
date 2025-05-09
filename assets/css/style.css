@@ -33,6 +33,7 @@
 .header {
     position: relative;
     z-index: 99999;
+	background-color: #fff;
 }
 .header ul,
 .header ol {
@@ -321,7 +322,7 @@
     vertical-align: middle;
 }
 .menu-logo img{
-	width: 100px;
+	width: 85px;
 	
 }
 .menu-logo span{
@@ -1138,7 +1139,7 @@
 	8. PAGE BANNER
 =========================*/
 .page-banner {
-    height: 300px;
+    height: 500px;
     background-size: cover;
     background-position: center center;
     display: table;
@@ -1161,6 +1162,7 @@
 	font-weight:600;
 	font-size:40px;
 	margin-bottom: 0;
+	padding-top: 5rem;
 }
 .breadcrumb-row ul li a{
 	color:#000;
@@ -1171,7 +1173,7 @@
 	}
 	.page-banner{
 		padding-bottom: 0;
-		height: 200px;
+		height: 400px;
 	}
 	.page-banner h1{
 		line-height: 24px;
@@ -1862,6 +1864,9 @@ button.back-to-top {
 }
 .pt-logo{
 	padding:20px 0;
+}
+.pt-logo a img{
+	width:100px;
 }
 
 .pt-social-link,
