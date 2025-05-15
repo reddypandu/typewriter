@@ -3460,3 +3460,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 	.whatsapp-icon:hover {
 		background-color: #128C7E;
 	}
+	.footer-img{
+		width: 150px;
+	}
