@@ -542,3 +542,12 @@ Theme Version:	1.0.0
 	jQuery(window).on('resize',function(){ThemeBuilder.changeTheScreen();});
 	
 })(jQuery);
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loading-bx");
+    loader.classList.add("fade-out");
+
+    // Optional: remove from DOM after fade-out
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 600); // Wait for transition to finish
+});
