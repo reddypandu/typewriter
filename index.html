@@ -170,8 +170,8 @@
 							<a href="#">Contact Us</a>
 						</div>
 						<div class="right-img">
-							<video src="assets/images/background/video.mp4" autoplay loop muted></video>
-							<!-- <img src="assets/images/background/bg1.jpg" alt="Best Typing Institute in Sircilla" /> -->
+							<!-- <video src="assets/images/background/video.mp4" autoplay loop muted></video> -->
+							<img src="assets/images/about/animate.png" alt="Best Typing Institute in Sircilla" />
 						</div>
 					</div>
 				</li>
@@ -259,6 +259,21 @@
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.caption-wrapper .right-img img{
+	width: 100%;
+	height: auto;
+  animation: floatImg 3s ease-in-out infinite;
+}
+
+/* Keyframes for up-down animation */
+@keyframes floatImg {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* move up by 5px */
+  }
+}
 /* Responsive */
 @media (max-width: 991px) {
 	.tp-caption.caption-wrapper {
@@ -400,7 +415,8 @@
       <!-- Right Image -->
       <div class="col-md-6">
         <div class="image-box">
-          <img src="assets/images/about/animate.png" alt="Importance of Typing" class="img-fluid">
+			<video src="assets/images/background/video.mp4" autoplay loop muted></video>
+          <!-- <img src="assets/images/about/animate.png" alt="Importance of Typing" class="img-fluid"> -->
         </div>
       </div>
   <div class="col-md-12 pt-3">
@@ -459,7 +475,10 @@
   border-radius: 10px;
   animation: floatImage 3s ease-in-out infinite;
 }
-
+.image-box video {
+  width: 100%;
+  height: auto;
+}
 /* Keyframes for up-down animation */
 @keyframes floatImage {
   0%, 100% {
