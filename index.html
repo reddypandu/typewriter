@@ -578,7 +578,7 @@
 			
 						<!-- Supportive Environment -->
 						<div class="col-md-12 col-sm-12">
-							<div class="highlight-box text-left">
+							<div class="highlight-box main text-left">
 								
 								  <ul>
     <li>❖ One and Only Biggest and Best Institute In Rajanna Sircilla District.</li>
@@ -609,6 +609,31 @@
 					box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 					transform: translateY(-5px);
 				}
+				.program-highlights-bx .highlight-box.main {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-highlights-bx .highlight-box.main:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.program-highlights-bx .highlight-box.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #1F2B7B, #D4AF37);
+}
+
 				.program-highlights-bx .highlight-box .icon-bx{
 					font-size: 40px;
 					color: var(--primary);
