@@ -612,7 +612,7 @@
 					transform: translateY(-5px);
 				}
 				.program-highlights-bx .highlight-box.main {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow:inset 0 4px 15px rgba(0, 0, 0, 0.15), inset 0 -4px 15px rgba(0, 0, 0, 0.15); 
     background-color: #ffffff;
     padding: 25px;
     border-radius: 12px;
@@ -620,7 +620,14 @@
     position: relative;
     overflow: hidden;
 }
+.program-highlights-bx .highlight-box.main li {
+	list-style-type: none;
+}
+.program-highlights-bx .highlight-box.main strong {
+	color: var(--primary);
+	font-weight: 600;
 
+}
 .program-highlights-bx .highlight-box.main:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -633,7 +640,7 @@
     left: 0;
     height: 5px;
     width: 100%;
-    background: linear-gradient(to right, #1F2B7B, #D4AF37);
+    background: linear-gradient(to right, #1F2B7B, #f7b205);
 }
 
 				.program-highlights-bx .highlight-box .icon-bx{
@@ -945,7 +952,52 @@
 			</div>
 			
 			<!-- Recent News End -->
+ <div class="container gallery-imgs">
+    <div class="row">
+      <div class="col-md-12 heading-bx left">
+        <h2 class="title-head">Our<span>Gallery</span></h2>
+      </div>
+	  <div class="col-md-12">
+		<div class="gallery-carousel owl-carousel owl-btn-1 col-12 p-lr0 pb-4">
+		  
+		  <div class="item ">
+			<div class="gallery-box">
+			  <img src="assets/images/gallery/typing1.jpeg" alt="Typing Classes Sircilla">
+			</div>
+		  </div>
+		  
+		  <div class="item">
+			<div class="gallery-box">
+			  <img src="assets/images/gallery/typing2.jpeg" alt="Best Typing Institute Sircilla">
+			</div>
+		  </div>
+		  
+		  <div class="item">
+			<div class="gallery-box">
+			  <img src="assets/images/gallery/typing3.jpeg" alt="Computer Training Institute Sircilla">
+			</div>
+		  </div>
+		  
+		  <div class="item">
+			<div class="gallery-box">
+			  <img src="assets/images/gallery/typing4.jpeg" alt="Telugu Typewriting Classes Sircilla">
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	  </div>
+	  </div>
 
+
+<style>
+	.gallery-imgs .item{
+		padding: 0.5rem;
+	}
+	.gallery-carousel .owl-nav{
+		display:none;
+	}
+</style>
 
 			<section class="faq-area">
   <div class="container">

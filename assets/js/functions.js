@@ -42,6 +42,31 @@ Theme Version:	1.0.0
 						}
 					});
 				}
+				var setGalleryCarousel = function() {
+					if(!checkSelectorExistence('.gallery-carousel')){return;}
+					jQuery('.gallery-carousel').owlCarousel({
+						loop:true,
+						autoplay:true,
+						margin:0,
+						nav:false,
+						dots: false,
+						navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+						responsive:{
+							0:{
+								items:1
+							},
+							480:{
+								items:1
+							},			
+							1024:{
+								items:3
+							},
+							1200:{
+								items:4
+							}
+						}
+					});
+				}
 				
 				var setUpcomingEventCarousel = function() {
 					if(!checkSelectorExistence('.upcoming-event-carousel')){return;}
@@ -89,7 +114,7 @@ Theme Version:	1.0.0
 								items:1
 							},
 							480:{
-								items:2
+								items:1
 							},			
 							1024:{
 								items:3
@@ -131,6 +156,7 @@ Theme Version:	1.0.0
 				return {
 					initialHelper:function(){
 						setCourseCarousel();
+						setGalleryCarousel();
 						setUpcomingEventCarousel();
 						setRecentNewsCarousel();
 						setTestimonialCarousel();
